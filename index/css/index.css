@@ -1,0 +1,119 @@
+html,
+body {
+    background-color: #dddddd;
+    margin-bottom: 10px;
+    overflow-x: hidden; 
+    
+}
+
+/* .section{ 
+    background-color:red;
+} */
+
+
+.section-about { 
+    height: 495px; 
+}
+
+#home_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.chapter_home {
+    min-height:769px;
+    background-color:#bfa9cc; 
+}
+
+.chapter_home h1{
+    line-height: 685px;
+    text-align: center;
+    color:#fff
+}
+
+.chapter_title {
+    /* min-height:769px; */
+    background-color:#9ACEC8;
+}
+
+.chapter_title h1 {
+    line-height: 480px;
+     text-align: center;
+}
+
+.chapter_content {
+    min-height:769px;
+    background-color:#FFF;
+    
+}
+
+.content_paragraph{
+    padding:48px;
+    line-height: 1.85em;
+}
+
+p {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color:#000;
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
+
+}
+
+.proxima-nova-bold{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color:#000;
+}
+ 
+.about {
+    background-color:#fff
+}
+
+.vertical-center {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-47%);
+}
+
+.homeButton {
+    line-height:-1em!important;
+}
+
+.homeButton span {
+    display:block;
+    line-height:30px!important;
+    text-align: left; 
+}
+
+.navbar_EricMarsh {
+    font-size: 0.75em; 
+}
+ 
+  
+.myNavBar {
+    background-color:#fff;
+}
+
+.myNavBar a {
+    color:#000;
+    font-family: 'Verdana'; 
+    font-size:2em;
+}
+
+.panel {
+    height:789px; 
+    background-color:#9ACEC8
+}
+
+

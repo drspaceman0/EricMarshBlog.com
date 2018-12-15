@@ -1,0 +1,23 @@
+#main-header {
+    height: 75px;
+    background-color: #ffa41a;
+    border-bottom-style: solid;
+    border-bottom-width: 11px;
+    border-bottom-color: #ff4846;
+} 
+#main-header-nav a {
+    font-size: 20px;
+    font-family: 'Arvo', serif;
+    float: right;
+    margin: 0px 8px;
+    color: #ffea52;
+    text-decoration: none;
+}
+#main-header-title {
+    float: left;
+    color: #ffea52;
+    padding: 11px;
+    font-size: 48px;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+}
