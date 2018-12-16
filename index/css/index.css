@@ -11,7 +11,11 @@ body {
 } */
 
 
-.section-about { 
+.section-aboutme { 
+    height: 495px; 
+}
+
+.section-work { 
     height: 495px; 
 }
 
