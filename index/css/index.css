@@ -188,6 +188,11 @@ p {
 
 }
 
+.proxima-nova-regular{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal; 
+    color:#000;
+}
 .proxima-nova-bold{
     font-family: proxima-nova, sans-serif;
     font-style: normal;
