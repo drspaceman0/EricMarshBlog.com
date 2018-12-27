@@ -1,31 +1,101 @@
 html,
 body {
     background-color: #dddddd;
-    margin-bottom: 10px;
-    overflow-x: hidden; 
+    margin-bottom: 10px; 
+    padding:0;
+    margin:0;
+}
+
+/* navbar - csss  */
+
+.container-navbar {
+    position:fixed;
+    z-index: 1; 
+    background-color:transparent;
+}
+
+
+ul.navbar {
+    top:0px;
+    margin:0 auto;
     
-}
+    padding: 0px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+   
+  
+  ul.navbar li {display: inline; 
+  list-style:none;
+      float:left;
+      width:20%;
+  
+  }
+  
+  ul.navbar li+li:before {
+    padding: 8px;
+    color: black; 
+    
+  }
+  
+  ul.navbar li  {  
+      display:block; 
+      width: 70px;
+        height: 50px;
+        transform: translateX(0px)skew(35deg) ;
+        text-align:center;
+        background: grey; 
+      transition: height 0.5s, transform 0.5s ease;   
+  } 
+   
+   ul.navbar li:hover:not(.tab-selected) {
+    height: 90px!important;  
+    transform: translateX(4px)skew(35deg)!important; 
+  }
+   
+   .tab-selected {
+       height: 80px!important; 
+      transform: translateX(6px)skew(35deg)!important; 
+   }
+   
+   
+   .tab-home { 
+      background:linear-gradient(90deg,transparent -100%, purple 100%,  transparent 100%)!important;    
+  } 
+   .tab-Pictures {
+       background:linear-gradient(90deg,transparent -100%, blue 100%,  transparent 100%)!important;   
+  } 
+   .tab-Summer {
+       background:linear-gradient(90deg,transparent -100%, red 100%, transparent 100%)!important;   
+  }  
+   .tab-Italy {
+       background:linear-gradient(90deg,transparent -100%, pink 100%, transparent 100%)!important;   
+  } 
+  
+  ul.navbar li a {
+      font-family:"Segoe UI";
+      font-weight:900;
+      display:block;
+      text-decoration:none;
+      position:relative;
+      text-transform:uppercase;
+      color:#fff;
+      height:70px;
+      line-height:90px; 
+      transform: skew(-35deg);
+  }
+/* end navbar - csss  */
+/* section - csss  */
 
-/* .section{ 
-    background-color:red;
-} */
-
-
-.section-aboutme { 
-    height: 495px; 
-}
-
-.section-work { 
-    height: 495px; 
-}
 
 #home_img{
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin-right: auto; 
+    position:relative; 
+    height: 450px;
 }
-
+ 
 .chapter_home {
     min-height:769px;
     background-color:#bfa9cc; 
@@ -47,15 +117,62 @@ body {
      text-align: center;
 }
 
-.chapter_content {
-    min-height:769px;
-    background-color:#FFF;
-    
+.half-column{
+    width:50%;
+    float: left;
 }
 
+.section-home {
+    min-height:565px;  
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+ 
+
+.section-about{
+    min-height:470px; 
+    background-color:purple;
+}
+
+ 
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    height:100%; 
+   
+}
+
+.section-work{
+    min-height:469px;
+}
+
+.chapter_image {
+    min-height:inherit;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+ 
+.chapter_image_title_bar p {
+    color:white; 
+
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    top:0;
+    margin:0;
+    padding:0;
+}
+
+.chapter_text { 
+    min-height:inherit;
+}
+  
 .content_paragraph{
-    padding:48px;
-    line-height: 1.85em;
+    padding: 24px 48px 20px 48px; 
+    line-height: 1.85em; 
 }
 
 p {
@@ -77,47 +194,4 @@ p {
     font-weight: 700;
     color:#000;
 }
- 
-.about {
-    background-color:#fff
-}
-
-.vertical-center {
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 47%;
-    transform: translateY(-47%);
-}
-
-.homeButton {
-    line-height:-1em!important;
-}
-
-.homeButton span {
-    display:block;
-    line-height:30px!important;
-    text-align: left; 
-}
-
-.navbar_EricMarsh {
-    font-size: 0.75em; 
-}
- 
-  
-.myNavBar {
-    background-color:#fff;
-}
-
-.myNavBar a {
-    color:#000;
-    font-family: 'Verdana'; 
-    font-size:2em;
-}
-
-.panel {
-    height:789px; 
-    background-color:#9ACEC8
-}
-
-
+/* section - csss  */
