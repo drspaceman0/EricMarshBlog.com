@@ -1,31 +1,39 @@
 html,
 body {
     background-color: #dddddd;
-    margin-bottom: 10px;
-    overflow-x: hidden; 
+    margin-bottom: 10px; 
+    padding:0;
+    margin:0;
+}
+
+/* navarbar - css  */
+
+header {
+    position:fixed;
+    background-color:pink;
+    width:100%;
+    z-index: 1;
+}
+
+header h1 {
     
+    font-size: 32px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 
-/* .section{ 
-    background-color:red;
-} */
+/* navar end - css */
 
-
-.section-aboutme { 
-    height: 495px; 
-}
-
-.section-work { 
-    height: 495px; 
-}
-
+/* section - csss  */
 #home_img{
     display: block;
     margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin-right: auto; 
+    position:relative; 
+    height: 450px;
 }
-
+ 
 .chapter_home {
     min-height:769px;
     background-color:#bfa9cc; 
@@ -47,15 +55,207 @@ body {
     text-align: center;
 }
 
-.chapter_content {
-    min-height:769px;
-    background-color:#FFF;
-    
+.row {
+    display:block;
+    position:relative;
+    min-height:470px;
 }
 
+.half-column{
+    width:50%;
+    float: left;
+}
+
+.section-home {
+    min-height:565px;  
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+ 
+
+.section-about{
+    min-height:470px;   
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.section-about .half-column {
+    background-image:inherit;
+} 
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    height:100%; 
+   
+}
+
+.section-work{
+    min-height:469px;
+}
+
+.section-contact {
+    min-height:269px;
+}
+
+.section-contact .row {
+    display:block;
+    position:relative;
+    min-height:269px;
+}
+
+/* tabs - css */
+.tabs_row {
+    position: absolute; 
+    top:528px;
+    background-color:transparent;
+}
+.tabs {
+    margin: 0 auto;   
+}
+.tabs li {  
+  float: left;  
+  position: relative; 
+  list-style-type: none;
+}
+.tabs a {  
+  float: left; 
+  padding: 10px 40px; 
+  text-decoration: none;
+  font-family: proxima-nova, sans-serif;
+  font-weight:700;
+   
+  color: black;
+  background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+  
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; 
+}
+/* .tabs .active { 
+  z-index: 3;
+}
+.tabs .active a {  
+  background: white; 
+  
+  color: black;  
+} */
+.tabs li:before, .tabs li:after, 
+.tabs li a:before, .tabs li a:after { 
+  position: absolute;
+  bottom: 0;
+}
+
+.tabs li:last-child:after,   .tabs li:last-child a:after,
+.tabs li:first-child:before, .tabs li:first-child a:before{
+  content: "";
+}
+/* .tabs .active:before, .tabs .active:after {
+  background: white;  
+  z-index: 1;
+} */
+/* Squares */
+.tabs li:before, .tabs li:after {
+  background: #ddc385;
+  width: 10px;
+  height: 10px;
+}
+.tabs li:before {
+  left: -10px;      
+}
+.tabs li:after { 
+  right: -10px;
+} 
+.tabs li a:after, .tabs li a:before {
+  width: 20px; 
+  height: 20px; 
+  -webkit-border-radius: 10px;
+  -moz-border-radius:    10px;
+  border-radius:         10px;
+  background: #4df0ca; 
+  z-index: 2;
+}
+/* .tabs .active a:after, .tabs .active a:before {
+  background: #ddc385;
+} */
+/* First and last tabs have different
+   outside color needs */
+.tabs li:first-child.active a:before,
+.tabs li:last-child.active a:after {
+  background: #4df0ca;
+}
+.tabs li a:before {
+  left: -20px;
+}
+.tabs li a:after {
+  right: -20px;
+}
+/* end tabs - css */
+
+.title_row {
+    background-color:teal; 
+    height:50px;
+    display:block;
+
+    color:white; 
+
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    top:0;
+    margin:0;
+    padding:0;
+}
+
+.title_row p {
+    color:white; 
+
+    font-size: 32px;
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    top:0;
+    margin:0;
+    padding:0;
+}
+
+.chapter_image {
+    min-height:inherit;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+
+ 
+ .chapter_image_title_bar p {
+    color:white; 
+
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    top:0;
+    margin:0;
+    padding:0;
+}
+
+.chapter_text { 
+    min-height:inherit;
+}
+  
 .content_paragraph{
-    padding:48px;
-    line-height: 1.85em;
+    padding: 24px 48px 20px 48px; 
+    line-height: 1.85em;  
+}
+
+.content_paragraph ul {
+    columns: 2;
 }
 
 p {
@@ -67,57 +267,18 @@ p {
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px; 
-
+    margin-inline-end: 0px;  
 }
 
+.proxima-nova-regular{
+    font-family: proxima-nova, sans-serif;
+    font-style: normal; 
+    color:#000;
+}
 .proxima-nova-bold{
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 700;
     color:#000;
 }
- 
-.about {
-    background-color:#fff
-}
-
-.vertical-center {
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 47%;
-    transform: translateY(-47%);
-}
-
-.homeButton {
-    line-height:-1em!important;
-}
-
-.homeButton span {
-    display:block;
-    line-height:30px!important;
-    text-align: left; 
-}
-
-.navbar_EricMarsh {
-    font-size: 0.75em; 
-}
- 
-  
-.myNavBar {
-    background-color:#fff;
-}
-
-.myNavBar a {
-    color:#000;
-    font-family: 'Verdana'; 
-    font-size:2em;
-}
-
-.panel {
-    height:789px; 
-    background-color:#9ACEC8
-}
-
-
+/* section - csss  */

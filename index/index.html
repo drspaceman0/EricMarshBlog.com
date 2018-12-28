@@ -1,104 +1,269 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Eric Marsh Blog!</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Eric Marsh Blog!</title>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-
-
-    <script src="js/easing.js"></script>
-    <!-- Scrollify  -->
-    <!-- https://github.com/lukehaas/Scrollify -->
-    <script src="js/jquery.scrollify.js"></script>
-    <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script> -->
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- <script src="js/easing.js"></script> -->
+  <!-- Scrollify  -->
+  <!-- https://github.com/lukehaas/Scrollify -->
+  <!-- <script src="js/jquery.scrollify.js"></script>
+    <script src="js/main.js"></script> -->
+  <!-- 
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+ -->
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 
 <body>
-    <section class="section section-home">
-        <div class="row" style="height: 495px;position:relative; ">
-            <div class="col-sm-12 chapter_home">
-                <img id="home_img" src="../index/img/happyPC.gif" class="center">
+  <!-- navbar  -->
+  <!-- <header>
+    <h1>Eric Marsh</h1>
+  </header> -->
+  <div class="section section-home">
+    <img id="home_img" src="../img/happyPC.gif" class="center">
+  </div>
 
-            </div>
-        </div>
-    </section>
-    <section class="section section-aboutme">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 chapter_title">
-                <h1>About me</h1>
-            </div>
-            <div class="col-lg-6 col-md-12 chapter_content">
-                <div class="container content_paragraph">
-                    <p class="proxima-nova-bold">WHO AM I?</p>
-                    <p>My name is Eric Marsh and I am a programmer and web developer living in Boise, Idaho. I have
-                        been programming for 5 years now.
-                        I started my freshman year of college and I have been obsessed with it ever since.
-                        My education emphasised the software engineering part of computer science, but I have since
-                        then been focusing
-                        on website and web applications. I am currently employed at Yardi Systems inc, and doing
-                        contract work on the side.</p>
-                    <p class="proxima-nova-bold">WHAT CAN I DO FOR YOU??</p>
-                    <p> I can help your ideas come to life! I love to make beautiful websites that are responsive, easy
-                        to use and work on any device.
-                        Whatever project you have in mind, send me a message! </p>
-                </div>
+  <div class="container section-about">
+    <div class="tabs_row">
+      <ul class="tabs group">
+        <li><a href="#one">About Me</a></li>
+      </ul>
+    </div>
+    <div class="row">
 
-            </div>
-        </div>
-    </section>
-    <section class="section section-work">
-        <div class="row" style="min-height:769px; ">
-            <div class="col-lg-6 col-md-12 chapter_content" style="padding:0;">
-                <div class="container" style="min-height:769px; ">
-                    <div class="row" style="min-height:192px; ">
-                        <div class="col-xs-12" style="min-height:192px;width:100%;background-color:red;">
-                            <div class="container content_paragraph">
-                                <p class="proxima-nova-bold">AreoLeds</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="min-height:192px; ">
-                        <div class="col-xs-12" style="min-height:192px;width:100%;background-color:yellow;">
-                            <div class="container content_paragraph">
-                                <p class="proxima-nova-bold">Yardi</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="min-height:192px; ">
-                        <div class="col-xs-12" style="min-height:192px;width:100%;background-color:blue;">
-                            <div class="container content_paragraph">
-                                <p class="proxima-nova-bold">Digilent</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="min-height:192px; ">
-                        <div class="col-xs-12" style="min-height:192px;width:100%;background-color:purple;">
-                            <div class="container content_paragraph">
-                                <p class="proxima-nova-bold">Twist Bioscience</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 chapter_title">
-                <h1>Work</h1>
-            </div>
+      <div class="half-column chapter_image">
+        <!-- <div class="chapter_image_title_bar" style="background-color:black;">
+            <p>About Me</p>
+          </div> -->
+        <!-- <img id="about_img" src="../img/eric_isopod.png" class="center-image"> -->
+      </div>
 
+      <div class="half-column chapter_text" style="background-color:white;">
+        <div class="flex-container content_paragraph">
+          <p class="proxima-nova-bold">WHO AM I?</p>
+          <p>My name is Eric Marsh and I am a programmer and web developer living in Boise, Idaho. I have
+            been programming for 5 years now.
+            I started my freshman year of college and I have been obsessed with it ever since.
+            My education emphasised the software engineering part of computer science, but I have since
+            then been focusing
+            on website and web applications. I am currently employed at Yardi Systems inc, and doing
+            contract work on the side.</p>
+          <p class="proxima-nova-bold">WHAT CAN I DO FOR YOU??</p>
+          <p> I can help your ideas come to life! I love to make beautiful websites that are responsive, easy
+            to use and work on any device.
+            Whatever project you have in mind, send me a message! </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+  <div class="container section-work">
+    <div class="row">
+      <div class="half-column chapter_text" style="background-color:white;">
+        <div class="flex-container content_paragraph">
+          <p class="proxima-nova-bold">AreoLeds</p>
+          <p>AreoLeds is a company based in Boise, Idaho that manufactures LED bulbs for aircrafts.
+            In September of 2018 they asked me to add functionality to their website for product warranties.
+            This means adding a front-end page so that users can input and send their product information,
+            and then store that warranty information on a backend. I finished in the following November,
+            and now it is easier than for the employees at AreoLeds to manage their warranties as well as customers to
+            send their own. </p>
+          <p class="proxima-nova-bold">Tools I Used</p>
+          <ul class="proxima-nova-regular">
+            <li>Wordpress</li>
+            <li>HTML/CSS</li>
+            <li>JS/Jquery</li>
+          </ul>
+        </div>
+      </div>
+      <div class="half-column chapter_image">
+        <div class="chapter_image_title_bar" style="background-color:black;">
+          <p style="color:white; top:0;margin:0;padding:0;">Areoleds</p>
+        </div>
+        <img id="about_img" src="../img/airplane.gif" class="center-image">
+      </div>
+    </div>
+    <div class="row">
+      <div class="half-column chapter_image">
+        <div class="chapter_image_title_bar" style="background-color:black;">
+          <p style="color:white; top:0;margin:0;padding:0;">Yardi Systems, Inc.</p>
+        </div>
+        <img id="about_img" src="../img/heart.gif" class="center-image">
+      </div>
+      <div class="half-column chapter_text" style="background-color:white;">
+        <div class="flex-container content_paragraph">
+          <p class="proxima-nova-bold">Yardi Systems, Inc.</p>
+          <p>I am currently a full stack software engineer at Yardi Systems Inc, which is one of the largest companies
+            to
+            provide real estate software.
+            I help develop for their Senior Living Suite software.
+            This software helps nurses provide assisted care to seniors by giving them a mobile/browser-based platform
+            to
+            perform assisted living operations,
+            access health records, and other things. I help on all levels of this software, doing things like testing
+            and
+            debugging, solving bugs, adding features,
+            setting up and modifying servers, and other things. It is nice to know that my work helps nurses perform
+            their jobs. </p>
+          <p class="proxima-nova-bold">Tools I Used</p>
+          <ul class="proxima-nova-regular">
+            <li>.net/MVC</li>
+            <li>VB code</li>
+            <li>HTML/CSS</li>
+            <li>JS/Jquery</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="half-column chapter_text" style="background-color:white;">
+        <div class="flex-container content_paragraph">
+          <p class="proxima-nova-bold">Digilent, Inc.</p>
+          <p>In the summer of 2016, I was an intern at Digilent Inc in Pullman, Washington.
+            Digilent provides technology-based education tools to teach electrical engineering concepts.
+            Among their products are microprocessors and microprocessor modules, which I coded libraries and demo
+            projects for.
+            I also wrote documentation and blog posts to help educate and sell their products. </p>
+          <p class="proxima-nova-bold">Tools I Used</p>
+          <ul class="proxima-nova-regular">
+            <li>C/C++</li>
+            <li>Arduino IDE</li>
+          </ul>
+        </div>
+      </div>
+      <div class="half-column chapter_image">
+        <div class="chapter_image_title_bar" style="background-color:black;">
+          <p style="color:white; top:0;margin:0;padding:0;">Digilent, Inc.</p>
+        </div>
+        <img id="about_img" src="../img/microprocessor.gif" class="center-image">
+      </div>
+    </div>
+    <div class="row">
+      <div class="half-column chapter_image">
+        <div class="chapter_image_title_bar" style="background-color:black;">
+          <p style="color:white; top:0;margin:0;padding:0;">Twist Bioscience</p>
+        </div>
+        <img id="about_img" src="../img/data.gif" class="center-image">
+      </div>
+      <div class="half-column chapter_text" style="background-color:white;">
+        <div class="flex-container content_paragraph">
+          <p class="proxima-nova-bold">Twist Bioscience</p>
+          <p>In the winter of 2015, I got an offer to help Twist BioScience by writing a Python program.
+            The program was to help by taking lab data, storing it in a readable format, and translating it into
+            analyzable data.
+            The end product took raw lab data from a LabVIEW program,
+            and executed a Python script that translated it into a Excel document and visualized the data into graphs.
+          </p>
+          <p class="proxima-nova-bold">Tools I Used</p>
+          <ul class="proxima-nova-regular">
+            <li>Python</li>
+            <li>LabVIEW</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section section-education">
+    <div class="row">
+      <div class="half-column chapter_text" style="background-color:white;">
+        <div class="flex-container content_paragraph">
+          <p class="proxima-nova-bold">University of Idaho</p>
+          <p>I did school and it sucked
+          </p>
+          <p class="proxima-nova-bold">Tools I Used</p>
+          <ul class="proxima-nova-regular">
+            <li>Python</li>
+            <li>LabVIEW</li>
+          </ul>
+        </div>
+      </div>
+      <div class="half-column chapter_image">
+        <div class="chapter_image_title_bar" style="background-color:black;">
+          <p style="color:white; top:0;margin:0;padding:0;">University of Idaho</p>
+        </div>
+        <img id="about_img" src="../img/data.gif" class="center-image">
+      </div>
+    </div>
+    <div class="row">
+      <div class="half-column chapter_image">
+        <div class="chapter_image_title_bar" style="background-color:black;">
+          <p style="color:white; top:0;margin:0;padding:0;">Senior Project</p>
+        </div>
+        <img id="about_img" src="../img/data.gif" class="center-image">
+      </div>
+      <div class="half-column chapter_text" style="background-color:white;">
+        <div class="flex-container content_paragraph">
+          <p class="proxima-nova-bold">Senior Project</p>
+          <p>I di
+          </p>
+          <p class="proxima-nova-bold">Tools I Used</p>
+          <ul class="proxima-nova-regular">
+            <li>C#</li>
+            <li>Unity</li>
+            <li>Whatever that audio programming language was</li>
+            <li>Github</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="half-column chapter_text" style="background-color:white;">
+          <div class="flex-container content_paragraph">
+            <p class="proxima-nova-bold"># Websites in # Days</p>
+            <p>I was very interested in the field of web design. However, I was a bit new to it.
+              So I decided to jump into the deep end by challenging myself to program a website a day for as long as I
+              could. I ended up with # websites. Many of them are silly,
+              or clearly experiments in learning new technologies.
+            </p>
+            <p class="proxima-nova-bold">Tools I Used</p>
+            <ul class="proxima-nova-regular">
+              <li>HTML/CSS</li>
+              <li>Bootstrap</li>
+              <li>JS/jQuery/Node.js</li>
+              <li>PHP</li>
+              <li>mySQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="half-column chapter_image">
+          <div class="chapter_image_title_bar" style="background-color:black;">
+            <p style="color:white; top:0;margin:0;padding:0;"># Websites in # Days</p>
+          </div>
+          <img id="about_img" src="../img/data.gif" class="center-image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container section-contact">
+    <div class="row" style="background-color:teal;">
+      <div class="flex-container content_paragraph chapter_text" style="background-color:royalblue;">
+        <!-- <p class="proxima-nova-bold">Contact Me</p>
+            <p>If you are interested in employing me, please contact me using any of the below links.<br>linkedIN<br>gmail
+            </p> -->
+      </div> 
+    </div>
+  </div>
+  <!-- <div class="container-navbar">
+    <ul class="navbar">
+      <li class="tab-home"><a href="#">Home</a></li>
+      <li class="tab-Pictures"><a href="#">Work</a></li>
+      <li class="tab-Summer"><a href="#">Study</a></li>
+      <li class="tab-Italy"><a href="#">Contact</a></li>
+    </ul>
+  </div> -->
 </body>
+
+</html>
