@@ -6,88 +6,7 @@ body {
     margin:0;
 }
 
-/* navbar - csss  */
-
-.container-navbar {
-    position:fixed;
-    z-index: 1; 
-    background-color:transparent;
-}
-
-
-ul.navbar {
-    top:0px;
-    margin:0 auto;
-    
-    padding: 0px 16px;
-    list-style: none;
-    background-color: #eee;
-  }
-   
-  
-  ul.navbar li {display: inline; 
-  list-style:none;
-      float:left;
-      width:20%;
-  
-  }
-  
-  ul.navbar li+li:before {
-    padding: 8px;
-    color: black; 
-    
-  }
-  
-  ul.navbar li  {  
-      display:block; 
-      width: 70px;
-        height: 50px;
-        transform: translateX(0px)skew(35deg) ;
-        text-align:center;
-        background: grey; 
-      transition: height 0.5s, transform 0.5s ease;   
-  } 
-   
-   ul.navbar li:hover:not(.tab-selected) {
-    height: 90px!important;  
-    transform: translateX(4px)skew(35deg)!important; 
-  }
-   
-   .tab-selected {
-       height: 80px!important; 
-      transform: translateX(6px)skew(35deg)!important; 
-   }
-   
-   
-   .tab-home { 
-      background:linear-gradient(90deg,transparent -100%, purple 100%,  transparent 100%)!important;    
-  } 
-   .tab-Pictures {
-       background:linear-gradient(90deg,transparent -100%, blue 100%,  transparent 100%)!important;   
-  } 
-   .tab-Summer {
-       background:linear-gradient(90deg,transparent -100%, red 100%, transparent 100%)!important;   
-  }  
-   .tab-Italy {
-       background:linear-gradient(90deg,transparent -100%, pink 100%, transparent 100%)!important;   
-  } 
-  
-  ul.navbar li a {
-      font-family:"Segoe UI";
-      font-weight:900;
-      display:block;
-      text-decoration:none;
-      position:relative;
-      text-transform:uppercase;
-      color:#fff;
-      height:70px;
-      line-height:90px; 
-      transform: skew(-35deg);
-  }
-/* end navbar - csss  */
 /* section - csss  */
-
-
 #home_img{
     display: block;
     margin-left: auto;
@@ -117,6 +36,12 @@ ul.navbar {
      text-align: center;
 }
 
+.row {
+    display:block;
+    position:relative;
+    min-height:470px;
+}
+
 .half-column{
     width:50%;
     float: left;
@@ -129,8 +54,7 @@ ul.navbar {
  
 
 .section-about{
-    min-height:470px; 
-    background-color:purple;
+    min-height:470px;   
 }
 
  
@@ -147,13 +71,135 @@ ul.navbar {
 .section-work{
     min-height:469px;
 }
+  
+/* tabs - css */
+.tabs_row {
+    position: absolute; 
+    top:528px;
+    background-color:transparent;
+}
+.tabs {
+    margin: 0 auto;   
+}
+.tabs li {  
+  float: left;  
+  position: relative; 
+  list-style-type: none;
+}
+.tabs a {  
+  float: left; 
+  padding: 10px 40px; 
+  text-decoration: none;
+  font-family: proxima-nova, sans-serif;
+  font-weight:700;
+   
+  color: black;
+  background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);; 
+  
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px; 
+}
+/* .tabs .active { 
+  z-index: 3;
+}
+.tabs .active a {  
+  background: white; 
+  
+  color: black;  
+} */
+.tabs li:before, .tabs li:after, 
+.tabs li a:before, .tabs li a:after { 
+  position: absolute;
+  bottom: 0;
+}
+
+.tabs li:last-child:after,   .tabs li:last-child a:after,
+.tabs li:first-child:before, .tabs li:first-child a:before{
+  content: "";
+}
+/* .tabs .active:before, .tabs .active:after {
+  background: white;  
+  z-index: 1;
+} */
+/* Squares */
+.tabs li:before, .tabs li:after {
+  background: #ddc385;
+  width: 10px;
+  height: 10px;
+}
+.tabs li:before {
+  left: -10px;      
+}
+.tabs li:after { 
+  right: -10px;
+} 
+.tabs li a:after, .tabs li a:before {
+  width: 20px; 
+  height: 20px; 
+  -webkit-border-radius: 10px;
+  -moz-border-radius:    10px;
+  border-radius:         10px;
+  background: #4df0ca; 
+  z-index: 2;
+}
+/* .tabs .active a:after, .tabs .active a:before {
+  background: #ddc385;
+} */
+/* First and last tabs have different
+   outside color needs */
+.tabs li:first-child.active a:before,
+.tabs li:last-child.active a:after {
+  background: #4df0ca;
+}
+.tabs li a:before {
+  left: -20px;
+}
+.tabs li a:after {
+  right: -20px;
+}
+/* end tabs - css */
+
+.title_row {
+    background-color:teal; 
+    height:50px;
+    display:block;
+
+    color:white; 
+
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    top:0;
+    margin:0;
+    padding:0;
+}
+
+.title_row p {
+    color:white; 
+
+    font-size: 32px;
+    text-align: center;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    top:0;
+    margin:0;
+    padding:0;
+}
 
 .chapter_image {
     min-height:inherit;
     background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
 }
  
-.chapter_image_title_bar p {
+ .chapter_image_title_bar p {
     color:white; 
 
     text-align: center;
@@ -172,7 +218,11 @@ ul.navbar {
   
 .content_paragraph{
     padding: 24px 48px 20px 48px; 
-    line-height: 1.85em; 
+    line-height: 1.85em;  
+}
+
+.content_paragraph ul {
+    columns: 2;
 }
 
 p {
@@ -184,8 +234,7 @@ p {
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px; 
-
+    margin-inline-end: 0px;  
 }
 
 .proxima-nova-regular{
