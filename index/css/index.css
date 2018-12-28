@@ -6,6 +6,25 @@ body {
     margin:0;
 }
 
+/* navarbar - css  */
+
+header {
+    position:fixed;
+    background-color:pink;
+    width:100%;
+    z-index: 1;
+}
+
+header h1 {
+    
+    font-size: 32px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* navar end - css */
+
 /* section - csss  */
 #home_img{
     display: block;
@@ -55,9 +74,12 @@ body {
 
 .section-about{
     min-height:470px;   
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 }
 
- 
+.section-about .half-column {
+    background-image:inherit;
+} 
 
 .center-image {
     display: block;
@@ -71,7 +93,17 @@ body {
 .section-work{
     min-height:469px;
 }
-  
+
+.section-contact {
+    min-height:269px;
+}
+
+.section-contact .row {
+    display:block;
+    position:relative;
+    min-height:269px;
+}
+
 /* tabs - css */
 .tabs_row {
     position: absolute; 
@@ -94,7 +126,7 @@ body {
   font-weight:700;
    
   color: black;
-  background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);; 
+  background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
   
   -webkit-border-top-left-radius: 15px;
   -webkit-border-top-right-radius: 15px;
@@ -198,6 +230,7 @@ body {
     min-height:inherit;
     background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
 }
+
  
  .chapter_image_title_bar p {
     color:white; 
