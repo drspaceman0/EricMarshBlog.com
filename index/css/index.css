@@ -75,7 +75,7 @@ header h1 {
     min-height:565px;  
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     position:relative;
-    
+
     /*  
     clip-path: polygon(
         0% 0%,  
@@ -104,23 +104,51 @@ header h1 {
 .section-about{
     min-height:470px;   
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-
-    /* position:relative;
-    top:-100px;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    clip-path: polygon(
+    position:relative;
+    /* top:-100px;
+    padding-top: 200px; 
+      clip-path: polygon(
         0% 0%,  
-        100% 25%,  
+        100% 15%,  
         100% 100%, 
-        0% 75%  
-      ); */
+        0% 100%  
+      );    */
 
+}
+
+.section-title { 
+    background-color:transparent;
+    height:100px;
+    /* position: relative;
+    top: -200px; */
+      display:flex;
+      align-items: center;
+      justify-content: center; 
+ 
+   
+  }
+   
+  .section-title h1 {
+      color: white; 
+      font-size: 82px;
+      vertical-align:middle;
+      font-family: proxima-nova, sans-serif;
+      margin: 0 auto;
+  }
+  
+
+.title-seperator{
+    width: 100%;
+    top:116px; 
+    border-bottom: .2em  solid white; 
+    position: absolute;
 }
 
 .section-about .half-column {
     background-image:inherit;
 } 
+
+
 
 .center-image {
     display: block;
@@ -148,11 +176,7 @@ header h1 {
   ); */
 }
 
-.section-title { 
-  background-color:inherit;
-  
-}
- 
+
 .section-education{ 
 
     /* position: relative;  
