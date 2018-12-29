@@ -75,8 +75,16 @@ header h1 {
     min-height:565px;  
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     position:relative;
-}
- 
+    
+    /*  
+    clip-path: polygon(
+        0% 0%,  
+        100% 0%,  
+        100% 100%,  
+        0% 90%  
+      ); */
+
+} 
 .home-title-container {  
     position: absolute; 
     width:100%;
@@ -96,6 +104,18 @@ header h1 {
 .section-about{
     min-height:470px;   
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+
+    /* position:relative;
+    top:-100px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    clip-path: polygon(
+        0% 0%,  
+        100% 25%,  
+        100% 100%, 
+        0% 75%  
+      ); */
+
 }
 
 .section-about .half-column {
@@ -111,46 +131,47 @@ header h1 {
    
 }
 
-.section-work{
+.section-work{ 
     min-height:469px;
     background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+
+
+    /* position:relative; 
+    top:-170px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    clip-path: polygon(
+    0 3.3%,  
+    100% 10%,  
+    100% 95%,  
+    0 100%  
+  ); */
+}
+
+.section-title { 
+  background-color:inherit;
+  
+}
+ 
+.section-education{ 
+
+    /* position: relative;  
+    top:-98px;
+    padding-top:100px;
+    clip-path: polygon(
+        0% 6%,  
+        100% 0%,  
+        100% 100%,  
+        0% 100%  
+      ); */
+
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
 }
 
 .section-contact {
     min-height:269px;
 }
-
-.title_row {
-    background-color:teal; 
-    height:50px;
-    display:block;
-
-    color:white; 
-
-    text-align: center;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-
-    top:0;
-    margin:0;
-    padding:0;
-}
-
-.title_row p {
-    color:white; 
-
-    font-size: 32px;
-    text-align: center;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-
-    top:0;
-    margin:0;
-    padding:0;
-}
-
+ 
 .chapter_contact {
     padding: 24px 48px 20px 48px; 
 }
@@ -159,9 +180,11 @@ header h1 {
     min-height:inherit;
     background-image: transparent;
 }
-
  
  .chapter_image_title_bar p {
+
+     display:none; /*remove me!! */
+
     color:white; 
 
     text-align: center;
@@ -214,26 +237,31 @@ p {
 
 /* tabs start */ 
 
-.tab-container {
+
+
+
+/* .tab-container {
     line-height: 35px;
   height: 37px;
   overflow: hidden;
   font-family: proxima-nova, sans-serif;
   font-size: 32px;
   position: relative;
+  padding-left:370px; 
+  background:transparent;
 }
 
 
 
 .tab {
     border: 1px solid #AAA;
-  background: #D1D1D1;
-  background: linear-gradient(top, #ECECEC 50%, #D1D1D1 100%);
+  background: #D1D1D1; 
+  background:white;
   display: inline-block;
   position:relative;
   z-index: 0;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
   text-shadow: 0 1px #FFF;
   margin: 0 -5px;
@@ -242,9 +270,9 @@ p {
 
 .tab:before,
 .tab:after {
-  border: 1px solid #AAA;
+  border: 1px solid #FFF;
   position: absolute;
-  top: -1px;
+  top: 30px;
   width: 6px;
   height: 6px;
   content: "";
@@ -252,20 +280,45 @@ p {
 
 .tab:before {
     left: -7px;
-    border-top-right-radius: 6px;
-    border-width: 1px 1px 0px 0px; 
+    border-bottom-right-radius: 6px;
+    border-width: 0px 1px 1px 0px; 
     box-shadow: 2px 0px 0 #FFF;
   }
   
   .tab:after {
     right: -7px;
-    border-top-left-radius: 6px;
-    border-width: 1px 0px 0px 1px; 
+    border-bottom-left-radius: 6px;
+    border-width: 0px 0px 1px 1px; 
     box-shadow: -2px 0px 0 #FFF;
-  }
+  } */
 
-#tab-work {
-
+ 
+.tab {
+    position:absolute;
+    z-index:1;
+    top:-43px;
+    left:1px; 
+    background:white ;
+    padding:10px 15px 2px 15px;
+    margin-left:200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tab a{
+    color:black;
+    font-family: proxima-nova, sans-serif;
+  font-size: 28px;
 }
 
 /* tabs end */
+
+
+.title {
+    height:40px;
+    color:white;
+    font-family: proxima-nova, sans-serif;
+    font-size: 28px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
