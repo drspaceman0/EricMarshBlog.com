@@ -218,7 +218,7 @@ header h1 {
 
 }
 
-.chapter_text {
+.chapter-text {
     min-height: inherit; 
     border: inherit;
 }
@@ -230,6 +230,7 @@ header h1 {
     height:100%;
     margin:15px;
     border-radius:1px;
+    
 }
 
 .content-paragraph ul {
