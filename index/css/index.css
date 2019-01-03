@@ -7,7 +7,7 @@ body {
     margin: 0;
     scroll-behavior: smooth;
 }
-
+ 
 /* html, body  - end */
 
 .rubber {
@@ -24,6 +24,7 @@ body {
     text-align: center;
     opacity: 0.6;
     width: 155px;
+    width: 200px;
     transform: rotate(-5deg);
     position: relative;
     left: -25px;
@@ -33,7 +34,6 @@ body {
 header {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.7);
-    ;
     width: 100%;
     z-index: 1;
     overflow: hidden;
@@ -48,6 +48,7 @@ header h1 {
     font-weight: 700;
     float: left;
     line-height: 25px;
+    margin-left: 40px;
 }
 
 
@@ -147,7 +148,7 @@ header h1 {
     background-size: 1400% 1400%;
     background-position: top;
     padding: 15px 15px 15px 15px;
-    margin-left: 80vw;
+    margin-left: 25vw;
 }
 
 /* education section - end */
@@ -163,7 +164,7 @@ header h1 {
     background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
     background-size: 1400% 1400%;
     padding: 15px 15px 15px 15px;
-    margin-left: 5vw;
+    margin-left: 55vw;
 }
 
 /* contact section - end */
@@ -243,7 +244,7 @@ header h1 {
     }
 
     .content-paragraph {
-        background-color: pink;
+        background-color: white;
         align-self: stretch;
         height: 100%;
         min-height: inherit;
@@ -264,7 +265,7 @@ header h1 {
 }
 
 
-hr {
+.section-thematic-break {
     width: 80%;
     border-color: silver;
     opacity: 0.3;
@@ -298,7 +299,7 @@ p {
 .tab {
     position: absolute;
     display: inline-block;
-    top: -62px;
+    top: -60px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-right: 1px solid white;
@@ -321,21 +322,6 @@ p {
     justify-content: center;
 }
 
-.dog-eared-page {
-    position: relative;
-}
-
-.dog-eared-page:after {
-    content: "";
-    position: absolute;
-    top: 3.2%;
-    left: 94.2%;
-    width: 0px;
-    height: 0px;
-    border-bottom: 30px solid #eee;
-    border-right: 30px solid black;
-    /*Set to background color, not transparent!*/
-
-}
+ 
 
 /* multi assigned classes - end */

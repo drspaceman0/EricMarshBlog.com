@@ -16,17 +16,24 @@
 </head>
 
 <body>
+<script>
+
+function scrollToElement(element){
+  $('html, body').animate({scrollTop: $(element).offset().top - 160 }, 'fast');
+}
+</script>
+
   <header>
     <h1>Eric Marsh</h1>
     <div class="header-links">
-      <a href="#home">Home</a>
+      <a onclick="scrollToElement('.section-home')">Home</a>
       <!-- <a href="#about">About</a> -->
-      <a href="#work">Work</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a onclick="scrollToElement('.section-work')">Work</a>
+      <a onclick="scrollToElement('.section-education')">Education</a>
+      <a onclick="scrollToElement('.section-contact')">Contact</a>
     </div>
   </header>
-  <div class="container section-home" id="home"> 
+  <div class="container section-home" id="home">
     <div class=" home-title-container">
       <h1>Hey, I'm Eric and welcome to my website! </h1>
     </div>
@@ -38,10 +45,10 @@
     </div>
     <div class="row">
       <div class=" content-paragraph ">
-          <img id="about_img" src="../img/eric.gif" class="hide-if-not-mobile float-left">
+        <img id="about_img" src="../img/eric.gif" class="hide-if-not-mobile float-left">
         <div class="rubber">
           WHO AM I?
-        </div> 
+        </div>
         <p>My name is Eric Marsh and I am a programmer and web developer living in Boise, Idaho. I have
           been programming for 5 years now.
           I started my freshman year of college and I have been obsessed with it ever since.
@@ -52,7 +59,7 @@
         <p class="proxima-nova-bold">WHAT CAN I DO FOR YOU??</p>
         <p> I can help your ideas come to life! I love to make beautiful websites that are responsive, easy
           to use and work on any device.
-          Whatever project you have in mind, send me a message! </p> 
+          Whatever project you have in mind, send me a message! </p>
       </div>
       <div class="content-image hide-if-mobile">
         <img id="about_img" src="../img/eric.gif">
@@ -64,16 +71,16 @@
   <div class="section section-work" id="work">
     <div class="tab" id="work-tab">
       <h1>Work</h1>
-    </div> 
+    </div>
     <div class="row">
-        <div class="content-image hide-if-mobile">
-            <img id="about_img" src="../img/airplane.gif">
-          </div>
+      <div class="content-image hide-if-mobile">
+        <img id="about_img" src="../img/airplane.gif">
+      </div>
       <div class="content-paragraph">
-          <img id="about_img" src="../img/airplane.gif" class="hide-if-not-mobile float-right">
+        <img id="about_img" src="../img/airplane.gif" class="hide-if-not-mobile float-right">
         <div class="rubber">
           AreoLeds
-        </div> 
+        </div>
         <p>AreoLeds is a company based in Boise, Idaho that manufactures LED bulbs for aircrafts.
           In September of 2018 they asked me to add functionality to their website for product warranties.
           This means adding a front-end page so that users can input and send their product information,
@@ -81,32 +88,36 @@
           and now it is easier than for the employees at AreoLeds to manage their warranties as well as customers to
           send their own. </p>
         <p class="proxima-nova-bold">Tools I Used</p>
+        <hr class="">
         <ul class="proxima-nova-regular">
           <li>Wordpress</li>
           <li>HTML/CSS</li>
           <li>JS/Jquery</li>
-        </ul> 
+        </ul>
       </div>
-      
+
     </div>
-    <hr>
+    <hr class="section-thematic-break">
     <div class="row">
-      
-        <div class=" content-paragraph">
-          <p class="proxima-nova-bold">Yardi Systems, Inc.</p>
-          <p>I am currently a full stack software engineer at Yardi Systems Inc, which is one of the largest companies
-            to
-            provide real estate software.
-            I help develop for their Senior Living Suite software.
-            This software helps nurses provide assisted care to seniors by giving them a mobile/browser-based platform
-            to
-            perform assisted living operations,
-            access health records, and other things. I help on all levels of this software, doing things like testing
-            and
-            debugging, solving bugs, adding features,
-            setting up and modifying servers, and other things. It is nice to know that my work helps nurses perform
-            their jobs. </p>
-          <!-- <p class="proxima-nova-bold">Tools I Used</p>
+
+      <div class=" content-paragraph">
+        <img id="yardi_img" src="../img/heart.gif" class="hide-if-not-mobile float-left">
+        <div class="rubber">
+          Yardi Systems, Inc.
+        </div>
+        <p>I am currently a full stack software engineer at Yardi Systems Inc, which is one of the largest companies
+          to
+          provide real estate software.
+          I help develop for their Senior Living Suite software.
+          This software helps nurses provide assisted care to seniors by giving them a mobile/browser-based platform
+          to
+          perform assisted living operations,
+          access health records, and other things. I help on all levels of this software, doing things like testing
+          and
+          debugging, solving bugs, adding features,
+          setting up and modifying servers, and other things. It is nice to know that my work helps nurses perform
+          their jobs. </p>
+        <!-- <p class="proxima-nova-bold">Tools I Used</p>
           <ul class="proxima-nova-regular">
             <li>.net/MVC</li>
             <li>VB code</li>
@@ -114,73 +125,81 @@
             <li>JS/Jquery</li>
             <li>SQL</li>
           </ul> -->
-        </div> 
-        <div class="content-image hide-if-mobile"> 
-            <img id="about_img" src="../img/heart.gif"  >
-          </div> 
+      </div>
+      <div class="content-image hide-if-mobile">
+        <img id="yardi_img" src="../img/heart.gif">
+      </div>
     </div>
-    <hr>
-    <div class="row"> 
-        <div class="content-image hide-if-mobile"> 
-            <img id="about_img" src="../img/microprocessor.gif"  >
-          </div>
-        <div class=" content-paragraph">
-          <p class="proxima-nova-bold">Digilent, Inc.</p>
-          <p>In the summer of 2016, I was an intern at Digilent Inc in Pullman, Washington.
-            Digilent provides technology-based education tools to teach electrical engineering concepts.
-            Among their products are microprocessors and microprocessor modules, which I coded libraries and demo
-            projects for.
-            I also wrote documentation and blog posts to help educate and sell their products. </p>
-          <p class="proxima-nova-bold">Tools I Used</p>
-          <ul class="proxima-nova-regular">
-            <li>C/C++</li>
-            <li>Arduino IDE</li>
-          </ul>
-        </div> 
-      
-    </div>
-    <hr>
+    <hr class="section-thematic-break">
     <div class="row">
-      
-        <div class=" content-paragraph">
-          <p class="proxima-nova-bold">Twist Bioscience</p>
-          <p>In the winter of 2015, I got an offer to help Twist BioScience by writing a Python program.
-            The program was to help by taking lab data, storing it in a readable format, and translating it into
-            analyzable data.
-            The end product took raw lab data from a LabVIEW program,
-            and executed a Python script that translated it into a Excel document and visualized the data into graphs.
-          </p>
-          <p class="proxima-nova-bold">Tools I Used</p>
-          <ul class="proxima-nova-regular">
-            <li>Python</li>
-            <li>LabVIEW</li>
-          </ul>
-        </div> 
-        <div class="content-image hide-if-mobile"> 
-            <img id="about_img" src="../img/data.gif"  >
-          </div> 
+      <div class="content-image hide-if-mobile">
+        <img id="digilent_img" src="../img/microprocessor.gif">
+      </div>
+      <div class=" content-paragraph">
+        <img id="digilent_img" src="../img/microprocessor.gif" class="hide-if-not-mobile float-right">
+        <div class="rubber">
+          Digilent, Inc.
+        </div>
+        <p>In the summer of 2016, I was an intern at Digilent Inc in Pullman, Washington.
+          Digilent provides technology-based education tools to teach electrical engineering concepts.
+          Among their products are microprocessors and microprocessor modules, which I coded libraries and demo
+          projects for.
+          I also wrote documentation and blog posts to help educate and sell their products. </p>
+        <p class="proxima-nova-bold">Tools I Used</p>
+        <ul class="proxima-nova-regular">
+          <li>C/C++</li>
+          <li>Arduino IDE</li>
+        </ul>
+      </div>
+
+    </div>
+    <hr class="section-thematic-break">
+    <div class="row"> 
+      <div class=" content-paragraph">
+        <img id="twistbioscience_img" src="../img/data.gif" class="hide-if-not-mobile float-left">
+        <div class="rubber">
+          Twist Bioscience
+        </div>
+        <p>In the winter of 2015, I got an offer to help Twist BioScience by writing a Python program.
+          The program was to help by taking lab data, storing it in a readable format, and translating it into
+          analyzable data.
+          The end product took raw lab data from a LabVIEW program,
+          and executed a Python script that translated it into a Excel document and visualized the data into graphs.
+        </p>
+        <p class="proxima-nova-bold">Tools I Used</p>
+        <ul class="proxima-nova-regular">
+          <li>Python</li>
+          <li>LabVIEW</li>
+        </ul>
+      </div>
+      <div class="content-image hide-if-mobile">
+        <img id="twistbioscience_img" src="../img/data.gif">
+      </div>
     </div>
   </div>
   <div class="section section-education" id="education">
     <div class="tab" id="education-tab">
       <h1>Education</h1>
     </div>
-    <div class="row"> 
-        <div class="content-image hide-if-mobile"> 
-            <img id="about_img" src="../img/college.gif"  >
-          </div>
-        <div class=" content-paragraph">
-          <p class="proxima-nova-bold">University of Idaho</p>
-          <p>I attended the University of Idaho from 2013-2018. Here I graduated with a major in Computer Science and a
-            minor in Mathematics.
-            My studies gave me a strong understanding of the software engineering side of computer science.
-            I learned how to program data structures in multiple languages, how to design and create compilers, and how
-            to work with a team I building software.
-            When I wasn’t studying, I had a part time job as a Music Director at the college radio station.
-            At this job, I used programming to create scripts to chart weekly music plays to online college-radio
-            charting websites.
-          </p>
-          <!-- <p class="proxima-nova-bold">Tools I Used</p>
+    <div class="row">
+      <div class="content-image hide-if-mobile">
+        <img id="about_img" src="../img/college.gif">
+      </div>
+      <div class=" content-paragraph">
+        <img id="college_img" src="../img/college.gif" class="hide-if-not-mobile float-right">
+        <div class="rubber">
+          University of Idaho
+        </div>
+        <p>I attended the University of Idaho from 2013-2018. Here I graduated with a major in Computer Science and a
+          minor in Mathematics.
+          My studies gave me a strong understanding of the software engineering side of computer science.
+          I learned how to program data structures in multiple languages, how to design and create compilers, and how
+          to work with a team I building software.
+          When I wasn’t studying, I had a part time job as a Music Director at the college radio station.
+          At this job, I used programming to create scripts to chart weekly music plays to online college-radio
+          charting websites.
+        </p>
+        <!-- <p class="proxima-nova-bold">Tools I Used</p>
           <ul class="proxima-nova-regular">
             <li>C/C++</li>
             <li>Python</li>
@@ -188,57 +207,63 @@
             <li>Perl/Bash</li>
             <li>HTML/CSS/JS</li>
           </ul> -->
-        </div> 
-      
+      </div>
+
     </div>
-    <hr>
+    <hr class="section-thematic-break">
     <div class="row">
-      
-        <div class=" content-paragraph">
-          <p class="proxima-nova-bold">Polymorphic Games</p>
-          <p>One of my proudest achievements at the University of Idaho was working with Polymorphic Games.
-            Polymorphic Games is a programming studio populated with undergraduate students, who were tasked with
-            creating educational videogames that teach the foundations of evolutionary biology.
-            Using genetic algorithms to program enemy AI, we were able to create a game that evolves based on the
-            players actions.
-            For example, if the player failed to kill enemies that were fast and had fire attacks, these traits would
-            spread to the next wave of enemies, effectively making the game harder.
-            This project helped me learn how to program AI, to develop software with other engineers, and to work with
-            biologists and artists to create something great.
-          </p>
-          <!-- <p class="proxima-nova-bold">Tools I Used</p>
+
+      <div class=" content-paragraph">
+        <img id="polymorphicgames_img" src="../img/game.gif" class="hide-if-not-mobile float-left">
+        <div class="rubber">
+          Poly-morphic Games
+        </div>
+        <p>One of my proudest achievements at the University of Idaho was working with Polymorphic Games.
+          Polymorphic Games is a programming studio populated with undergraduate students, who were tasked with
+          creating educational videogames that teach the foundations of evolutionary biology.
+          Using genetic algorithms to program enemy AI, we were able to create a game that evolves based on the
+          players actions.
+          For example, if the player failed to kill enemies that were fast and had fire attacks, these traits would
+          spread to the next wave of enemies, effectively making the game harder.
+          This project helped me learn how to program AI, to develop software with other engineers, and to work with
+          biologists and artists to create something great.
+        </p>
+        <!-- <p class="proxima-nova-bold">Tools I Used</p>
           <ul class="proxima-nova-regular">
             <li>C#</li>
             <li>Unity</li>
             <li>Github</li>
           </ul> -->
-        </div> 
-        <div class="content-image hide-if-mobile"> 
-            <img id="about_img" src="../img/game.gif"  >
-          </div> 
+      </div>
+      <div class="content-image hide-if-mobile">
+        <img id="polymorphicgames_img" src="../img/game.gif">
+      </div>
     </div>
-    <hr>
-    <div class="row"> 
-        <div class="content-image hide-if-mobile"> 
-            <img id="about_img" src="../img/ericmarshblog.gif"  >
-          </div>
-        <div class=" content-paragraph">
-          <p class="proxima-nova-bold">30 Websites in 30 Days</p>
-          <p>After college, I realized that I wanted to design and program websites and web applications.
-            Although I was taught the fundamentals of programming websites in college, I still had a lot to learn.
-            I decided to jump into the deep end of learning web development by challenging myself to program 30
-            websites in 30 days.
-            It started off really challenging and I sometimes struggled to make a website every day.
-            But I eventually started to make some great websites.
-            I learned to design beautiful pages using design frameworks such as bootstrap, to create fun and
-            interactive front ends with jQuery and node.js,
-            and to go the next level by integrating a backend through using PHP and SQL.
-            Besides that, I learned that the best way to learn new technology is to dive in and create something using
-            it.
-            I really enjoy revisiting these websites and trying all the silly and fun things I made. Feel free to
-            revisit my journey through learning web development <a href="#">here</a>.
-          </p>
-          <!-- <p class="proxima-nova-bold">Tools I Used</p>
+    <hr class="section-thematic-break">
+    <div class="row">
+      <div class="content-image hide-if-mobile">
+        <img id="about_img" src="../img/ericmarshblog.gif">
+      </div>
+      <div class=" content-paragraph">
+        <img id="ericmarshblog_img" src="../img/ericmarshblog.gif" class="hide-if-not-mobile float-right">
+        <div class="rubber">
+          30 Websites in 30 Days
+        </div>
+        <p>After college, I realized that I wanted to design and program websites and web applications.
+          Although I was taught the fundamentals of programming websites in college, I still had a lot to learn.
+          I decided to jump into the deep end of learning web development by challenging myself to program 30
+          websites in 30 days.
+          It started off really challenging and I sometimes struggled to make a website every day.
+          But I eventually started to make some great websites.
+          I learned to design beautiful pages using design frameworks such as bootstrap, to create fun and
+          interactive front ends with jQuery and node.js,
+          and to go the next level by integrating a backend through using PHP and SQL.
+          Besides that, I learned that the best way to learn new technology is to dive in and create something using
+          it.
+          I really enjoy revisiting these websites and trying all the silly and fun things I made. Feel free to
+          revisit my journey through learning web development <a href="#">here</a>.
+        </p>
+        <!-- <p class="proxima-nova-bold">Tools I Used</p>
           <ul class="proxima-nova-regular">
             <li>HTML/CSS</li>
             <li>Bootstrap</li>
@@ -246,34 +271,30 @@
             <li>PHP</li>
             <li>mySQL</li>
           </ul> -->
-        </div> 
-      
+      </div>
+
     </div>
   </div>
   </div>
-  <div class="section section-contact" id="contact" style="height:inherit;">
+  <div class="section section-contact" id="contact">
     <div class="tab" id="contact-tab">
       <h1>Contact</h1>
     </div>
     <div class="row">
-      <div class="full-column chapter-text">
-        <div class="chapter-text">
-          <div class=" content-paragraph" ">
-            <p class=" proxima-nova-bold">Contact Me</p>
-            <p>Feel free to contact me! Whether you have a question or would like to work on a project together or have
-              feedback on the website, drop me a line!</p>
-            <p>I am available for freelance projects and full time employment. </p>
-            <div class="contact-links">
-              <img id="gmail_img" src="../img/gmail.gif">
-              <img id="linkedin_img" src="../img/linkedin.gif" style="margin-left:5px;">
-              <img id="resume_img" src="../img/resume.gif" style="margin-left:5px;">
-            </div>
-          </div>
+      <div class=" content-paragraph" style="width: 100%;">
+        <p class=" proxima-nova-bold">Contact Me</p>
+        <p>Feel free to contact me! Whether you have a question or would like to work on a project together or have
+          feedback on the website, drop me a line!</p>
+        <p>I am available for freelance projects and full time employment. </p>
+        <div class="contact-links">
+          <img id="gmail_img" src="../img/gmail.gif">
+          <img id="linkedin_img" src="../img/linkedin.gif" style="margin-left:5px;">
+          <img id="github_img" src="../img/github.gif" style="margin-left:5px;">
+          <img id="resume_img" src="../img/resume.gif" style="margin-left:5px;">
         </div>
       </div>
     </div>
   </div>
-
+  </div> 
 </body>
-
 </html>
