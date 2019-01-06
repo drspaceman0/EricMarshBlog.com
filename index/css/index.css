@@ -10,26 +10,6 @@ body {
  
 /* html, body  - end */
 
-.rubber {
-    box-shadow: 0 0 0 3px red, 0 0 0 2px red inset;
-    border: 2px solid transparent;
-    border-radius: 4px;
-    display: inline-block;
-    padding: 5px 2px;
-    line-height: 22px;
-    color: red;
-    font-size: 24px;
-    font-family: 'Black Ops One', cursive;
-    text-transform: uppercase;
-    text-align: center;
-    opacity: 0.6;
-    width: 155px;
-    width: 200px;
-    transform: rotate(-5deg);
-    position: relative;
-    left: -25px;
-}
-
 /* navarbar */
 header {
     position: fixed;
@@ -38,6 +18,7 @@ header {
     z-index: 1;
     overflow: hidden;
     padding: 10px 10px;
+    height: 8vh;
 }
 
 header h1 {
@@ -51,8 +32,7 @@ header h1 {
     margin-left: 40px;
     cursor: pointer;
     user-select: none;
-}
-
+} 
 
 .header-links {
     margin: 22px;
@@ -84,9 +64,10 @@ header h1 {
 
 /* home section */
 .section-home {
-    min-height: 565px;
+    min-height: 500px;  
     background-color: transparent;
-    position: relative;
+    position: relative; 
+    
 }
 
 .section-home h1 {
@@ -98,11 +79,16 @@ header h1 {
 
 .home-title-container {
     position: absolute;
-    width: 100%;
+    width: 100%; 
     height: 100%;
-    display: flex;
-    align-items: center;
+    display: flex; 
     justify-content: center;
+    align-content: center;
+    line-height:3500%;
+}
+
+.home-title-container h1 {
+    font-size:4.2vw;  
 }
 
 /* home section - end */
@@ -189,6 +175,8 @@ header h1 {
     border-radius: 5px;
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
     margin: 15px;
+    min-height:auto;
+    margin: 35px;
 }
 
 .row {
@@ -197,6 +185,7 @@ header h1 {
     position: relative;
     min-height: 470px;
     overflow: auto;
+    min-height:auto;
 }
 
 .full-column {
@@ -235,7 +224,116 @@ header h1 {
     display:block;
 }
 
+
+
+.section-thematic-break {
+    width: 80%;
+    border-color: silver;
+    opacity: 0.3;
+}
+
+
+p {
+    font-size: 16px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;  
+
+    font-size:22px;
+    line-height: 1.75em;
+}
+
+/* @media (min-width: 992px) {  
+    p {
+        font-size: 20px;
+    }
+} */
+
+.proxima-nova-regular {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    color: #000; 
+}
+
+.proxima-nova-bold {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #000;
+}
+
+/* rubber stamp title */
+.rubber {
+    box-shadow: 0 0 0 3px red, 0 0 0 2px red inset;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px 2px;
+    line-height: 22px;
+    color: red;
+    font-size: 24px;
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.6;
+    width: 155px;
+    width: 200px;
+    transform: rotate(-5deg);
+    position: relative;
+    left: -25px;
+}
+
+.tab {
+    position: absolute;
+    display: inline-block;
+    top: -62px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.tab h1 {
+    color: black;
+    font-family: proxima-nova, sans-serif;
+    font-size: 28px;
+    margin: 0 auto;
+}
+
+ .contact-links img {
+     cursor: pointer;
+ }
+
+ .tools-used-list {
+    padding: 0px;
+    margin: 0 auto;
+    list-style-type: none;
+    font-size:18px;
+    
+}
+
+.tools-used-list li {  
+   width: auto; 
+   border-radius: 3px;
+   padding:2px 6px 2px 6px;
+   margin: 5px 5px 5px 5px;
+   float: left;
+}
+
+
+/* multi assigned classes - end */
+
+
+
 @media (min-width: 992px) {  
+
+    .section-home {
+        min-height: 64.5vh;
+    }
+
     .hide-if-mobile {
         display:block;
     }
@@ -264,8 +362,7 @@ header h1 {
 
     .content-image {
         align-self: stretch;
-        margin: 5px;
-        height: 100%;
+        margin: 5px; 
         width: 50%;
         padding: 24px 48px 20px 48px;
         min-height: inherit;
@@ -274,83 +371,3 @@ header h1 {
         justify-content: center;
     }
 }
-
-
-.section-thematic-break {
-    width: 80%;
-    border-color: silver;
-    opacity: 0.3;
-}
-
-
-p {
-    font-size: 16px;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #000;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;  
-}
-
-.proxima-nova-regular {
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    color: #000;
-}
-
-.proxima-nova-bold {
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    color: #000;
-}
-
-.tab {
-    position: absolute;
-    display: inline-block;
-    top: -62px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; 
-}
-
-.tab h1 {
-    color: black;
-    font-family: proxima-nova, sans-serif;
-    font-size: 28px;
-    margin: 0 auto;
-}
-
-.title {
-    height: 40px;
-    color: white;
-    font-family: proxima-nova, sans-serif;
-    font-size: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
- .contact-links img {
-     cursor: pointer;
-     
- }
-
- .tools-used-list {
-     padding: 0px;
-     margin: 0 auto;
-     list-style-type: none;
-     
- }
-
-.tools-used-list li {  
-    width: auto; 
-    border-radius: 3px;
-    padding:2px 6px 2px 6px;
-    margin: 5px 5px 5px 5px;
-    float: left;
-}
-
-/* multi assigned classes - end */
