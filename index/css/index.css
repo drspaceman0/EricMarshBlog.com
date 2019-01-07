@@ -61,13 +61,7 @@ header a {
     position: relative; 
     
 }
-
-.section-home h1 {
-    color: white;
-    font-size: 42px;
-    vertical-align: middle;
-    font-family: proxima-nova, sans-serif;
-}
+ 
 
 .home-title-container {
     position: absolute;
@@ -80,7 +74,12 @@ header a {
 }
 
 .home-title-container h1 {
-    font-size:4.2vw;  
+    
+    color: white;
+    vertical-align: middle;
+    font-family: proxima-nova, sans-serif;
+ 
+    font-size:4.8vw;  
 }
 
 /* home section - end */
@@ -333,8 +332,17 @@ p {
         font-size: 33px;
     }
 
+    
+    .home-title-container {
+        line-height:2800%;
+    }
+
     .section-home {
         min-height: 64.5vh;
+    }
+
+    .section-home h1 {
+        font-size:3.8vw;  
     }
 
     .hide-if-mobile {
