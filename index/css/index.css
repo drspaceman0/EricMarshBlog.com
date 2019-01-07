@@ -17,44 +17,35 @@ header {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     z-index: 1;
-    overflow: hidden;
-    padding: 10px 10px;
-    height: 8vh;
+    overflow: hidden; 
+    height: 9vh;
 }
 
-header h1 {
-    color: white;
-    font-size: 32px;
-    font-family: proxima-nova, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    float: left;
-    line-height: 25px;
-    margin-left: 40px;
-    cursor: pointer;
-    user-select: none;
-} 
-
-.header-links {
-    margin: 22px;
-    margin-right: 40px;
+.header-links { 
+    margin-right: 15px; 
     float: right;
-    line-height: 25px;
-
+    
 }
 
-.header-links a {
-    margin-left: 20px;
+.header-title{ 
+    margin-left: 40px; 
+    float: left;
+}
+
+header a { 
     float: left;
     text-align: center;
     color: white;
-    font-size: 26px;
+    font-size: 26px; 
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 700;
     text-decoration: none;
     cursor: pointer; 
-    user-select: none;
+    user-select: none; 
+    font-size: 4.4vh; 
+    line-height: 9vh;
+    margin-right:15px;
 }
 
 .header-links a:hover {
@@ -332,6 +323,15 @@ p {
 
 
 @media (min-width: 992px) {  
+
+    header {  
+        height: 63px;
+    }
+
+    header a {
+        line-height: 63px;
+        font-size: 33px;
+    }
 
     .section-home {
         min-height: 64.5vh;
