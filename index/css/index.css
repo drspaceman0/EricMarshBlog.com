@@ -284,15 +284,17 @@ p {
 .tab {
     position: absolute;
     display: inline-block;
-    top: -62px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px; 
-}
+    width:auto;
+    top: -62px; 
+    padding: 5px 10px 5px 10px!important;
+} 
 
 .tab h1 {
     color: black;
     font-family: proxima-nova, sans-serif;
-    font-size: 28px;
+    font-size: 46px;
     margin: 0 auto;
 }
 
@@ -323,6 +325,14 @@ p {
 
 @media (min-width: 992px) {  
 
+    .tab { 
+        padding: 15px!important;
+    }
+    
+    .tab h1 { 
+        font-size: 28px; 
+    }
+ 
     header {  
         height: 63px;
     }
