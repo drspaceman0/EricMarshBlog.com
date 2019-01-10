@@ -216,9 +216,7 @@ header a {
 .hide-if-not-mobile {
     display:block;
 }
-
-
-
+ 
 .section-thematic-break {
     width: 80%;
     border-color: silver;
@@ -261,9 +259,7 @@ p {
 }
 
 /* rubber stamp title */
-.rubber {
-    box-shadow: 0 0 0 3px red, 0 0 0 2px red inset;
-    border: 2px solid transparent;
+.rubber { 
     border-radius: 4px;
     display: inline-block;
     padding: 5px 2px;
@@ -273,12 +269,23 @@ p {
     font-family: 'Black Ops One', cursive;
     text-transform: uppercase;
     text-align: center;
-    opacity: 0.6;
-    width: 155px;
-    width: 200px;
+    opacity: 0.6; 
     transform: rotate(-5deg);
     position: relative;
     left: -25px;
+    /* width: 200px; */ 
+
+    margin-top:3px;
+    box-shadow: 0 0 0 3px red, 0 0 0 2px red inset;
+    border: 2px solid transparent;
+    padding: 5px 2px;
+    line-height: 22px;
+    font-size: 24px;
+    font-size: 42px; 
+    width:auto!important;  
+    padding:11px; 
+
+    position: relative; 
 }
 
 .tab {
@@ -318,12 +325,16 @@ p {
    float: left;
 }
 
-
+ 
 /* multi assigned classes - end */
-
-
-
-@media (min-width: 992px) {  
+@media (min-width: 992px) {   
+    .rubber {
+        box-shadow: 0 0 0 3px red, 0 0 0 2px red inset;
+        border: 2px solid transparent;
+        padding: 5px 10px;
+        line-height: 22px;
+        font-size:24px;
+    }
 
     .tab { 
         padding: 15px!important;
@@ -387,6 +398,7 @@ p {
         margin: 5px; 
         width: 50%;
         padding: 24px 48px 20px 48px;
+        padding: 0px 10px 0px 10px;
         min-height: inherit;
         display: flex;
         flex-direction: column;
