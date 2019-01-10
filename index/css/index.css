@@ -112,9 +112,9 @@ header a {
 }
 
 #work-tab {
-    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
-    background-position:center;
-    background-size: 1000% 200%;
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%); 
+    background-position: top right;
+    background-size: 1000px 2300px;
     padding: 15px 15px 15px 15px;
     border-left: 1px solid white;
     position: absolute;
