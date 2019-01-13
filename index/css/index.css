@@ -117,7 +117,7 @@ header a {
 #work-tab {
     background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%); 
     background-position: top right;
-    background-size: 1000px 2300px;
+    background-size: 1000px 2300px;  
     padding: 15px 15px 15px 15px;
     border-left: 1px solid white;
     position: absolute;
@@ -135,7 +135,7 @@ header a {
 
 #education-tab {
     background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
-    background-size: 1400% 1400%;
+    background-size: 1400% 1400%; 
     background-position: top;
     padding: 15px 15px 15px 15px;
     border-right: 1px solid white;
@@ -155,7 +155,7 @@ header a {
 #contact-tab {
     background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
     background-position:center;
-    background-size: 1400% 1400%;
+    background-size: 1400% 1400%; 
     padding: 15px 15px 15px 15px;
     position: absolute;
     right: 25px; 
@@ -202,7 +202,7 @@ header a {
     float:left;
 
     /* height: 100%; */
-    padding: 24px 20px 20px 20px;
+    padding: 24px 20px 20px 20px; 
 }
  
 .float-left {
@@ -387,7 +387,27 @@ p {
 }
  
 /* desktop */
+  
 @media (min-width: 992px) {   
+
+    
+    .section {
+        /* margin: 0px 85px 45px 85px;
+        margin: 0px 10vw 45px 10vw; */
+        width:85%;
+        margin: auto;
+        margin-bottom: 45px;
+    }
+    @media (min-width: 1400px) {   
+        .section {
+            /* margin: 0px 85px 45px 85px;
+            margin: 0px 10vw 45px 10vw; */
+            width:70%;
+            margin: auto;
+            margin-bottom: 45px;
+        }
+    }
+
     .rubber {
         box-shadow: 0 0 0 3px red, 0 0 0 2px red inset;
         border: 2px solid transparent;
@@ -430,10 +450,6 @@ p {
         display:none;
     }
  
-    .section {
-        margin: 0px 85px 45px 85px;
-    }
-
     .row {
         display: flex;
         flex-wrap: nowrap;
@@ -446,19 +462,19 @@ p {
         align-self: stretch; 
         min-height: inherit;
         margin: 25px;
-
-        /* height: 100%; */
+        max-width: 720px;
     }
 
     .content-image {
-        align-self: stretch;
-        margin: 5px; 
-        width: 50%;
+        align-self: stretch;  
         padding: 24px 48px 20px 48px;
         padding: 0px 10px 0px 10px;
         min-height: inherit;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        margin: auto;
+        /* width: 50%; */
     }
 }
